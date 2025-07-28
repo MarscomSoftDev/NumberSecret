@@ -11,7 +11,7 @@ while (numeroUsuario != numeroSecreto) {
     if (numeroUsuario > numeroSecreto) {
       alert("El numero es menor");
     } else {
-      alert("El numero secreto es maywwasasdwor");
+      alert("El numero secreto es mayor");
     }
   }
 }
