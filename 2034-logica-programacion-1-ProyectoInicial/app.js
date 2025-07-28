@@ -1,12 +1,17 @@
-let numeroSecreto = 6;
-let numeroUsuario = prompt("Me indicas un numero por favor:");
+let numeroSecreto = 4;
+let numeroUsuario = 0;
+while (numeroUsuario != numeroSecreto) {
+  let numeroUsuario = prompt("Me indicas un numero por favor:");
 
-console.log(numeroUsuario);
+  console.log(numeroUsuario);
 
-if (numeroUsuario == numeroSecreto) {
-  console.log(
-    `Felicidades, acertaste el numero , el numero es: ${numeroUsuario}`
-  );
-} else {
-  console.log("perdiste");
+  if (numeroUsuario == numeroSecreto) {
+    alert(`Felicidades, acertaste el numero , el numero es: ${numeroUsuario}`);
+  } else {
+    if (numeroUsuario > numeroSecreto) {
+      alert("El numero es menor");
+    } else {
+      alert("El numero secreto es mayeor");
+    }
+  }
 }
